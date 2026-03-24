@@ -29,3 +29,12 @@ objc2-app-kit    = { version = "0.3", features = [
 ] }
 objc2-quartz-core = { version = "0.3", features = ["CALayer", "CATransaction"] }
 objc2-core-graphics = { version = "0.3", features = ["CGColor", "CGColorSpace"] }
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[profile.release.package."*"]
+opt-level = "s"
