@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Background: dark rounded rectangle -->
+  <rect width="1024" height="1024" rx="180" ry="180" fill="#1a1a1a"/>
+
+  <!-- Outer ring: large arc / circle, thin stroke -->
+  <circle cx="512" cy="512" r="340" fill="none" stroke="#e0e0e0" stroke-width="36" opacity="0.55"/>
+
+  <!-- Middle ring -->
+  <circle cx="512" cy="512" r="220" fill="none" stroke="#e0e0e0" stroke-width="30" opacity="0.75"/>
+
+  <!-- Center dot -->
+  <circle cx="512" cy="512" r="72" fill="#ffffff"/>
+
+  <!-- Parentheses left: ( -->
+  <text
+    x="188"
+    y="590"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="420"
+    font-weight="bold"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="auto"
+    opacity="0.90">(</text>
+
+  <!-- Parentheses right: ) -->
+  <text
+    x="836"
+    y="590"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="420"
+    font-weight="bold"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="auto"
+    opacity="0.90">)</text>
+
+  <!-- Inner parentheses left -->
+  <text
+    x="286"
+    y="566"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="280"
+    font-weight="bold"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="auto"
+    opacity="0.70">(</text>
+
+  <!-- Inner parentheses right -->
+  <text
+    x="738"
+    y="566"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="280"
+    font-weight="bold"
+    fill="#ffffff"
+    text-anchor="middle"
+    dominant-baseline="auto"
+    opacity="0.70">)</text>
+</svg>

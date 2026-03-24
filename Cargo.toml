@@ -1,0 +1,31 @@
+[package]
+name = "menubar-countdown"
+version = "0.1.0"
+edition = "2021"
+description = "macOS menu bar countdown timer for scheduled events"
+
+[dependencies]
+chrono = { version = "0.4", features = ["serde"] }
+serde  = { version = "1",   features = ["derive"] }
+toml   = "0.8"
+dirs   = "6"
+open = "5.3.3"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+tray-icon = "0.21"
+tao       = "0.34"
+# Retained for NSSound (audio) and NSStatusItem button highlight
+objc2            = "0.6"
+objc2-foundation = { version = "0.3", features = ["NSString"] }
+objc2-app-kit    = { version = "0.3", features = [
+    "NSSound",
+    "NSStatusBar",
+    "NSStatusItem",
+    "NSStatusBarButton",
+    "NSView",
+    "NSColor",
+    "NSButton",
+    "NSControl",
+] }
+objc2-quartz-core = { version = "0.3", features = ["CALayer", "CATransaction"] }
+objc2-core-graphics = { version = "0.3", features = ["CGColor", "CGColorSpace"] }
